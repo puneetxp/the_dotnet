@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../the_doc"
+		},
+		{
+			"path": "../../../../the_lib"
+		},
+		{
+			"path": "../../../../../server/the_billing/deno/the_deno"
+		}
+	],
+	"settings": {
+		"php.version": "8.2"
+	}
+}
