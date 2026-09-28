@@ -1,0 +1,9 @@
+# .NET build artifacts
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -7,7 +7,7 @@ namespace The.DotNet.Lib
     {
         private string fileField;
         private string dir;
-        private string publicPath;
+        private string publicPath = "";
         private string baseUrl = "/storage"; 
 
         public FileAct(string fileField, string dir)

@@ -8,7 +8,7 @@ namespace The.DotNet.Lib
     public class Mail
     {
         public string Subject { get; set; } = "Birthday Reminders for August";
-        public string Message { get; set; }
+        public string Message { get; set; } = "";
         public List<string> To { get; set; } = new List<string>();
         public List<string> Cc { get; set; } = new List<string>();
         public List<string> Bcc { get; set; } = new List<string>();

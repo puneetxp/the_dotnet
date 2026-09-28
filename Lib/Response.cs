@@ -11,7 +11,7 @@ namespace The.DotNet.Lib
             return data;
         }
 
-        public static object NotFound(object data = null)
+        public static object NotFound(object? data = null)
         {
              return new { error = "Not Found", details = data };
         }

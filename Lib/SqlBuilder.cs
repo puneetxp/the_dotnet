@@ -7,17 +7,17 @@ namespace The.DotNet.Lib
 {
     public class JoinSpec
     {
-        public string Alias { get; set; }
-        public string Table { get; set; }
-        public string LocalKey { get; set; }
-        public string ForeignKey { get; set; }
-        public List<string> Cols { get; set; }
-        public string Prefix { get; set; }
+        public required string Alias { get; set; }
+        public required string Table { get; set; }
+        public required string LocalKey { get; set; }
+        public required string ForeignKey { get; set; }
+        public required List<string> Cols { get; set; }
+        public required string Prefix { get; set; }
     }
 
     public class SqlBuilder
     {
-        public static List<string> BuildSelectList(string alias, List<string> cols = null, string prefix = null)
+        public static List<string> BuildSelectList(string alias, List<string>? cols = null, string? prefix = null)
         {
             if (cols == null || cols.Count == 0)
             {
@@ -33,9 +33,9 @@ namespace The.DotNet.Lib
         public static (string Sql, List<object> Placeholders, List<string> SelectParts) BuildJoinQuery(
             string baseTable,
             string baseAlias,
-            List<string> baseCols,
+            List<string>? baseCols,
             List<JoinSpec> joins,
-            Dictionary<string, object> where = null)
+            Dictionary<string, object>? where = null)
         {
             var selectParts = BuildSelectList(baseAlias, baseCols);
             var joinSql = new StringBuilder();
